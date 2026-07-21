@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schilder Maastricht | F&amp;S Schildersbedrijf — Binnen- &amp; Buitenschilderwerk</title>
+<meta name="description" content="Schildersbedrijf in Maastricht voor binnen- en buitenschilderwerk, trappen en gevels. 5,0★ op Google met 39 reviews. Vraag vandaag nog een gratis offerte aan.">
+<link rel="canonical" href="https://fs-schildersbedrijf-demo.vercel.app/">
+<meta property="og:title" content="Schilder Maastricht | F&amp;S Schildersbedrijf">
+<meta property="og:description" content="Vakkundig binnen- en buitenschilderwerk in Maastricht en omgeving. 5,0★ op Google, 39 reviews. Uw schilderwerk, onze passie.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HousePainter",
+  "name": "F&S Schildersbedrijf",
+  "image": "https://fs-schildersbedrijf-demo.vercel.app/images/logo.png",
+  "description": "Schildersbedrijf in Maastricht voor binnen- en buitenschilderwerk, trappen, gevels en spuitwerk.",
+  "slogan": "Uw schilderwerk, onze passie",
+  "telephone": "+31 6 27152496",
+  "email": "fs.schildersbedrijf@gmail.com",
+  "url": "https://fs-schildersbedrijf-demo.vercel.app/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Vademruwe 13",
+    "addressLocality": "Maastricht",
+    "postalCode": "6218 SV",
+    "addressCountry": "NL"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:30",
+    "closes": "17:00"
+  },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "39" },
+  "areaServed": "Maastricht, Heer, Amby, Wolder, Sint Pieter, Meerssen, Valkenburg, Eijsden, Gronsveld",
+  "sameAs": ["https://www.facebook.com/FSMaastricht/"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Wat kost schilderwerk?","acceptedAnswer":{"@type":"Answer","text":"Dat hangt af van het oppervlak en de staat van het werk. Binnen rekenen we vaak per m² of per vertrek, buiten per project. Na een gratis opname ontvangt u een vaste prijs zonder verrassingen achteraf."}},
+    {"@type":"Question","name":"Hoe snel kunnen jullie beginnen?","acceptedAnswer":{"@type":"Answer","text":"Meestal binnen één tot twee weken. Een gemiddeld vertrek is in één tot twee dagen klaar, een gevel of trappenhuis plannen we netjes in overleg."}},
+    {"@type":"Question","name":"In welke omgeving werken jullie?","acceptedAnswer":{"@type":"Answer","text":"In heel Maastricht en Zuid-Limburg: Heer, Amby, Wolder, Sint Pieter, Meerssen, Valkenburg, Eijsden en omstreken."}},
+    {"@type":"Question","name":"Is de offerte gratis?","acceptedAnswer":{"@type":"Answer","text":"Ja, altijd. We komen vrijblijvend langs, bekijken het werk en u ontvangt een heldere offerte. Pas na uw akkoord gaan we aan de slag."}}
+  ]
+}
+</script>
+<style>
+/* registered zodat het thema vloeiend kan overvloeien bij het scrollen */
+@property --bg{syntax:'<color>';inherits:true;initial-value:#1c1a14}
+@property --bg-2{syntax:'<color>';inherits:true;initial-value:#232019}
+@property --bg-3{syntax:'<color>';inherits:true;initial-value:#2c2820}
+@property --ink{syntax:'<color>';inherits:true;initial-value:#f5f1e8}
+@property --ink-dim{syntax:'<color>';inherits:true;initial-value:#b8b0a0}
+@property --accent-deep{syntax:'<color>';inherits:true;initial-value:#f0bd2e}
+@property --line{syntax:'<color>';inherits:true;initial-value:rgba(245,241,232,0.14)}
+
+:root{
+  /* DONKER (premium) is de basis */
+  --bg:#1c1a14;
+  --bg-2:#232019;
+  --bg-3:#2c2820;
+  --ink:#f5f1e8;
+  --ink-dim:#b8b0a0;
+  --accent:#e5ac00;
+  --accent-deep:#f0bd2e;
+  --line:rgba(245,241,232,0.14);
+  --btn-text:#161513;
+  --radius:4px;
+  --max:1200px;
+  transition:--bg .7s ease,--bg-2 .7s ease,--bg-3 .7s ease,--ink .7s ease,--ink-dim .7s ease,--accent-deep .7s ease,--line .7s ease;
+}
+html[data-mode="light"]{
+  --bg:#ffffff;
+  --bg-2:#f5f3ed;
+  --bg-3:#ebe7dc;
+  --ink:#161513;
+  --ink-dim:#575249;
+  --accent-deep:#b98600;
+  --line:rgba(22,21,19,0.12);
+}
+@media(prefers-reduced-motion:reduce){:root{transition:none}}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Inter',system-ui,sans-serif;
+  font-size:18px;
+  line-height:1.65;
+  overflow-x:hidden;
+}
+::selection{background:var(--accent);color:var(--ink)}
+a{-webkit-tap-highlight-color:transparent}
+:focus{outline:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+h1,h2,h3{font-family:'Archivo',sans-serif;font-weight:800;line-height:1.06;letter-spacing:-.015em}
+.serif-i{font-style:normal;font-weight:800;color:var(--accent)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.eyebrow{
+  font-size:13px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--accent-deep);font-weight:700;margin-bottom:18px;display:block;
+}
+section{padding:120px 0}
+@media(max-width:768px){section{padding:78px 0}body{font-size:17px}}
+
+/* ---------- grain overlay ---------- */
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------- nav ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:18px 0;transition:background .35s ease,padding .35s ease,box-shadow .35s ease;
+}
+nav.scrolled{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);padding:11px 0;border-bottom:1px solid var(--line);box-shadow:0 6px 24px rgba(0,0,0,.14)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;transition:color .3s}
+nav.scrolled .logo{color:var(--ink)}
+.logo img{height:46px;width:auto;display:block}
+.logo .wordmark{font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;letter-spacing:-.01em;line-height:1}
+.logo .wordmark span{color:var(--accent)}
+.logo .wordmark small{display:block;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.68);font-weight:600;margin-top:2px;transition:color .3s}
+nav.scrolled .logo .wordmark small{color:var(--ink-dim)}
+.nav-links{display:flex;gap:32px;align-items:center;list-style:none}
+.nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-size:15px;font-weight:600;transition:color .25s}
+.nav-links a:hover{color:#fff}
+nav.scrolled .nav-links a{color:var(--ink-dim)}
+nav.scrolled .nav-links a:hover{color:var(--ink)}
+.nav-links a.btn,.nav-links a.btn:hover,nav.scrolled .nav-links a.btn{color:var(--btn-text)}
+.btn{
+  display:inline-block;background:var(--accent);color:var(--btn-text);
+  padding:15px 30px;border-radius:var(--radius);text-decoration:none;
+  font-weight:700;font-size:16px;transition:transform .25s,box-shadow .25s,background .25s;
+  border:none;cursor:pointer;font-family:'Archivo',sans-serif;letter-spacing:.01em;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(229,172,0,.35);background:var(--accent-deep);color:var(--btn-text)}
+.btn-nav{padding:11px 22px;font-size:14px}
+.btn-ghost{background:transparent;border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);box-shadow:none;color:#fff}
+.hamburger{display:none;background:none;border:1px solid rgba(255,255,255,.35);border-radius:var(--radius);color:#fff;font-size:22px;cursor:pointer;padding:8px 14px;line-height:1;transition:background .25s,border-color .25s,color .3s}
+nav.scrolled .hamburger{color:var(--ink);border-color:var(--line)}
+.hamburger:hover{background:rgba(255,255,255,.12);border-color:var(--accent)}
+nav.scrolled .hamburger:hover{background:rgba(22,21,19,.06)}
+.mobile-menu{
+  display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:200;
+  background:color-mix(in srgb,var(--bg) 97%,transparent);backdrop-filter:blur(16px);
+  flex-direction:column;justify-content:center;align-items:center;gap:6px;
+  opacity:0;transition:opacity .3s ease;
+}
+.mobile-menu.open{display:flex;opacity:1}
+.mobile-menu a{
+  font-family:'Archivo',sans-serif;font-weight:700;font-size:28px;color:var(--ink);text-decoration:none;
+  padding:11px 24px;transition:color .25s;
+}
+.mobile-menu a:hover{color:var(--accent-deep)}
+.mobile-menu .btn{font-size:17px;margin-top:18px;color:var(--btn-text)}
+.mobile-close{
+  position:absolute;top:22px;right:26px;background:none;border:1px solid var(--line);
+  border-radius:var(--radius);color:var(--ink);font-size:20px;cursor:pointer;padding:8px 15px;line-height:1;
+}
+@media(max-width:960px){
+  .nav-links{display:none}
+  .hamburger{display:block}
+}
+
+/* ---------- hero ---------- */
+.hero{
+  min-height:100vh;display:flex;align-items:center;position:relative;
+  padding:170px 0 120px;overflow:hidden;
+}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:#141210 url('images/hero-bg.jpg') center/cover no-repeat}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(90deg,rgba(16,14,10,.94) 0%,rgba(16,14,10,.76) 42%,rgba(16,14,10,.42) 100%),
+    radial-gradient(circle at 80% 30%,rgba(229,172,0,.30),transparent 55%);
+}
+.hero .wrap{position:relative;z-index:1}
+.hero-inner{max-width:780px}
+.hero .eyebrow{color:#f2c848}
+.hero h1{font-size:clamp(40px,6.4vw,82px);max-width:16ch;margin-bottom:24px;color:#fff}
+.hero p.lead{font-size:clamp(18px,2vw,21px);color:rgba(255,255,255,.86);max-width:52ch;margin-bottom:34px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:40px}
+.hero .btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.hero .btn-ghost:hover{background:#fff;color:#161513}
+.trust{display:flex;align-items:center;gap:14px;color:var(--ink-dim);font-size:15px;flex-wrap:wrap}
+.hero .trust{color:rgba(255,255,255,.85)}
+.hero .trust b{color:#fff}
+.stars{color:var(--accent-deep);letter-spacing:2px;font-size:16px}
+.hero .stars{color:#f2c848}
+.trust b{color:var(--ink)}
+
+/* ---------- before/after slider ---------- */
+.ba{
+  position:relative;width:100%;aspect-ratio:3/4;max-height:78vh;
+  border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+  box-shadow:0 24px 60px rgba(0,0,0,.16);user-select:none;touch-action:pan-y;
+  background:#20211f;
+}
+.ba-layer{position:absolute;inset:0;background-size:cover;background-position:center}
+.ba-after{background-color:#1b1c1a;background-image:var(--img-na)}
+.ba-before{background-color:#dedad0;background-image:var(--img-voor);clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0)}
+.ba-label{position:absolute;top:16px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(22,21,19,.7);padding:6px 12px;border-radius:3px;backdrop-filter:blur(4px);z-index:3}
+.ba-label.voor{left:16px}
+.ba-label.na{right:16px}
+.ba-handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:#fff;transform:translateX(-50%);z-index:4;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.ba-knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:var(--accent);border:3px solid #fff;display:flex;align-items:center;justify-content:center;color:var(--ink);font-size:15px;box-shadow:0 6px 18px rgba(0,0,0,.28);cursor:ew-resize}
+.ba-caption{position:absolute;bottom:0;left:0;right:0;z-index:3;padding:22px 20px 18px;background:linear-gradient(to top,rgba(15,16,14,.85),transparent);color:#fff;font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;letter-spacing:.02em}
+.ba-caption span{display:block;font-family:'Inter';font-weight:500;font-size:13px;color:rgba(255,255,255,.8);letter-spacing:0}
+
+/* ---------- marquee ---------- */
+.marquee{
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:20px 0;overflow:hidden;white-space:nowrap;background:var(--accent);
+}
+.marquee-track{display:inline-flex;gap:56px;animation:scroll 32s linear infinite}
+.marquee-track span{
+  font-family:'Archivo',sans-serif;font-weight:700;font-size:18px;color:#161513;
+  display:flex;align-items:center;gap:56px;text-transform:uppercase;letter-spacing:.04em;
+}
+.marquee-track span::after{content:"■";color:rgba(22,21,19,.5);font-size:11px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ---------- diensten ---------- */
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}
+@media(max-width:1000px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid-4{grid-template-columns:1fr}}
+.card{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px 28px;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;
+}
+.card:hover{transform:translateY(-6px);border-color:rgba(229,172,0,.6);box-shadow:0 14px 34px rgba(0,0,0,.09)}
+.card .num{font-family:'Archivo',sans-serif;font-weight:800;color:var(--accent-deep);font-size:15px;display:block;margin-bottom:20px}
+.card h3{font-size:22px;margin-bottom:11px}
+.card p{color:var(--ink-dim);font-size:16px}
+.section-head{max-width:660px}
+.section-head h2{font-size:clamp(32px,4.5vw,52px);margin-bottom:18px}
+.section-head p{color:var(--ink-dim);font-size:18px}
+
+/* ---------- waarom wij ---------- */
+.why-band{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;border-top:1px solid var(--line)}
+@media(max-width:1000px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.why-grid{grid-template-columns:1fr}}
+.why{padding:40px 30px 40px 0;border-bottom:1px solid var(--line)}
+.why:not(:last-child){border-right:1px solid var(--line)}
+.why:not(:first-child){padding-left:30px}
+@media(max-width:1000px){
+  .why:nth-child(2){border-right:none}
+  .why:nth-child(3){padding-left:0}
+}
+@media(max-width:560px){.why{border-right:none!important;padding:30px 0!important}}
+.why .stat{font-family:'Archivo',sans-serif;font-weight:900;font-size:52px;color:var(--accent-deep);line-height:1;margin-bottom:14px}
+.why .stat small{font-size:24px}
+.why h3{font-size:19px;margin-bottom:10px}
+.why p{color:var(--ink-dim);font-size:15px}
+
+/* ---------- werkwijze ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:60px;border-top:1px solid var(--line)}
+@media(max-width:800px){.steps{grid-template-columns:1fr}}
+.step{padding:42px 34px 42px 0;border-bottom:1px solid var(--line);position:relative}
+.step:not(:last-child){border-right:1px solid var(--line);padding-right:34px}
+.step:not(:first-child){padding-left:34px}
+@media(max-width:800px){.step{border-right:none!important;padding:34px 0!important}}
+.step .big{font-family:'Archivo',sans-serif;font-weight:900;font-size:52px;color:var(--accent-deep);line-height:1;margin-bottom:18px}
+.step h3{font-size:21px;margin-bottom:11px}
+.step p{color:var(--ink-dim);font-size:16px}
+
+/* ---------- voor & na showcase ---------- */
+.ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:56px}
+@media(max-width:800px){.ba-pair{grid-template-columns:1fr}}
+.ba-card{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--bg)}
+.ba-card .ba{aspect-ratio:4/3;box-shadow:none;border:none;border-radius:0}
+.ba-card .body{padding:22px 24px}
+.ba-card .body .tag{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-deep);font-weight:700}
+.ba-card .body h3{font-size:21px;margin:8px 0 6px}
+.ba-card .body p{color:var(--ink-dim);font-size:15px}
+
+/* ---------- projecten (foto grid) ---------- */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+@media(max-width:900px){.projects{grid-template-columns:1fr}}
+.project{
+  border-radius:var(--radius);overflow:hidden;position:relative;
+  aspect-ratio:4/5;display:flex;align-items:flex-end;padding:26px;
+  border:1px solid var(--line);transition:transform .35s ease,box-shadow .35s ease;
+  text-decoration:none;color:inherit;background-size:cover;background-position:center;
+}
+.project:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,.14)}
+.p1{background-color:#3a2a1c;background-image:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.15)),url('images/plafond.jpg')}
+.p2{background-color:#1b1c1a;background-image:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.15)),url('images/trap-zwart-na.webp')}
+.p3{background-color:#2b2f33;background-image:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.15)),url('images/gevel-na.webp')}
+.project::after{
+  content:"";position:absolute;inset:0;z-index:0;
+  background:linear-gradient(to top,rgba(12,12,10,.9) 0%,rgba(12,12,10,.5) 36%,transparent 64%);
+}
+.project-info{position:relative;z-index:1}
+.project-info .tag{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f2c34d;font-weight:700;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.project-info h3{font-size:23px;margin-top:8px;color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.photo-note{margin-top:20px;font-size:14px;color:var(--ink-dim);font-style:italic}
+
+/* ---------- over ons ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center;margin-top:24px}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:40px}}
+.about-photo{
+  aspect-ratio:4/5;border-radius:var(--radius);position:relative;overflow:hidden;
+  background-color:#20211f;background-image:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.05) 55%),var(--img-bus-about);
+  background-size:cover;background-position:center;border:1px solid var(--line);
+  display:flex;align-items:flex-end;justify-content:flex-start;box-shadow:0 18px 44px rgba(0,0,0,.12);
+}
+.about-photo span{position:relative;z-index:1;font-family:'Archivo',sans-serif;font-weight:700;color:#fff;font-size:14px;padding:22px 24px;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.about-copy h2{font-size:clamp(32px,4.5vw,52px);margin-bottom:20px}
+.about-copy p{color:var(--ink-dim);margin-bottom:16px}
+.usp-list{list-style:none;margin-top:26px;display:grid;gap:14px}
+.usp-list li{display:flex;gap:14px;align-items:flex-start;color:var(--ink)}
+.usp-list li::before{content:"■";color:var(--accent-deep);font-size:12px;margin-top:6px}
+.usp-list b{display:block}
+.usp-list span{color:var(--ink-dim);font-size:16px}
+
+/* ---------- reviews (auto-scroll) ---------- */
+.reviews-band{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}
+.review-viewport{margin-top:52px;overflow:hidden;position:relative;
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent);
+  mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent);}
+.review-track{display:flex;gap:20px;width:max-content;animation:revscroll 60s linear infinite}
+.review-viewport:hover .review-track{animation-play-state:paused}
+@keyframes revscroll{to{transform:translateX(-50%)}}
+.review{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;width:360px;flex:0 0 auto;display:flex;flex-direction:column}
+.review .stars{margin-bottom:14px}
+.review p.quote{font-family:'Inter',sans-serif;font-size:17px;font-weight:500;margin:0 0 20px;line-height:1.55;color:var(--ink)}
+.review .who{font-size:14px;color:var(--ink-dim);margin-top:auto}
+.review .who b{color:var(--ink);display:block;font-size:15px;font-family:'Archivo';font-weight:700}
+.rev-foot{margin-top:34px;display:flex;align-items:center;gap:12px;color:var(--ink-dim);font-size:15px;flex-wrap:wrap}
+.g-badge{display:inline-flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:8px 14px;font-weight:700;color:var(--ink);font-size:14px}
+.g-badge .stars{margin:0}
+@media(prefers-reduced-motion:reduce){.review-track{animation:none;flex-wrap:nowrap;overflow-x:auto}}
+
+/* ---------- blog ---------- */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+@media(max-width:900px){.blog-grid{grid-template-columns:1fr}}
+.post{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;background:var(--bg);transition:transform .35s ease,box-shadow .35s ease;display:flex;flex-direction:column}
+.post:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(0,0,0,.09)}
+.post .thumb{aspect-ratio:16/10;background-size:cover;background-position:center;position:relative;display:flex;align-items:center;justify-content:center}
+.thumb-note{font:700 11px 'Archivo',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:rgba(22,21,19,.4);border:1px dashed rgba(255,255,255,.6);border-radius:4px;padding:8px 14px;text-align:center;backdrop-filter:blur(2px)}
+.b1 .thumb{background-color:#3a2a1c;background-image:linear-gradient(150deg,#e5ac00,#7a5a00)}
+.b2 .thumb{background-color:#20211f;background-image:linear-gradient(150deg,#33342f,#161513)}
+.b3 .thumb{background-color:#c9502a;background-image:linear-gradient(150deg,#d0623a,#7a3016)}
+.post .body{padding:24px 26px}
+.post .cat{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-deep);font-weight:700}
+.post h3{font-size:20px;margin:10px 0 8px;line-height:1.25}
+.post p{color:var(--ink-dim);font-size:15px}
+.post .more{margin-top:14px;font-weight:700;font-family:'Archivo';color:var(--ink);font-size:14px}
+
+/* ---------- faq ---------- */
+.faq-list{max-width:780px;margin-top:46px}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item:first-child{border-top:1px solid var(--line)}
+.faq-q{
+  width:100%;background:none;border:none;color:var(--ink);cursor:pointer;
+  font-family:'Archivo',sans-serif;font-weight:700;font-size:20px;text-align:left;
+  padding:25px 44px 25px 0;position:relative;line-height:1.35;
+}
+.faq-q::after{
+  content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);
+  color:var(--accent-deep);font-size:26px;font-weight:400;
+  transition:transform .3s ease;
+}
+.faq-item.open .faq-q::after{transform:translateY(-50%) rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a p{color:var(--ink-dim);font-size:17px;padding-bottom:25px;max-width:64ch}
+
+/* ---------- cta ---------- */
+.cta-final{position:relative;overflow:hidden;text-align:center}
+.cta-final::before{
+  content:"";position:absolute;width:760px;height:760px;border-radius:50%;left:50%;top:50%;
+  transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(229,172,0,.14),transparent 65%);
+  z-index:-1;
+}
+.cta-final h2{font-size:clamp(36px,5.5vw,64px);max-width:18ch;margin:0 auto 22px}
+.cta-final p{color:var(--ink-dim);max-width:50ch;margin:0 auto 36px}
+.cta-sub{margin-top:22px;font-size:14px;color:var(--ink-dim)}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:15px;color:var(--ink-dim);background:var(--bg-2)}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.1fr;gap:38px;margin-bottom:44px}
+@media(max-width:820px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.foot-grid{grid-template-columns:1fr}}
+footer h4{font-family:'Archivo',sans-serif;font-weight:800;color:var(--ink);font-size:16px;margin-bottom:14px}
+footer p{margin-bottom:14px}
+footer a{color:var(--ink-dim);text-decoration:none}
+footer a:hover{color:var(--accent-deep)}
+footer ul{list-style:none}
+footer li{margin-bottom:8px}
+.foot-logo{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.foot-logo img{height:52px;width:auto}
+.socials{display:flex;gap:10px;margin-top:6px}
+.socials a{width:40px;height:40px;border:1px solid var(--line);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--ink);transition:background .25s,color .25s,border-color .25s}
+.socials a:hover{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.socials svg{width:19px;height:19px;fill:currentColor}
+.foot-bottom{border-top:1px solid var(--line);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px}
+.foot-bottom a{color:var(--accent-deep)}
+
+/* ---------- sticky mobile cta ---------- */
+.sticky-cta{
+  display:none;position:fixed;left:0;right:0;bottom:0;z-index:150;
+  padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+  background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(14px);
+  border-top:1px solid var(--line);box-shadow:0 -6px 24px rgba(0,0,0,.16);
+  transform:translateY(110%);transition:transform .35s ease;
+}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta .btn{display:block;width:100%;text-align:center;padding:15px;font-size:16px}
+@media(max-width:960px){.sticky-cta{display:block}}
+@media(prefers-reduced-motion:reduce){.sticky-cta{transition:none}}
+
+/* ---------- thema-switch (demo, om te vergelijken) ---------- */
+.theme-switch{
+  position:fixed;left:16px;bottom:16px;z-index:170;display:flex;align-items:center;gap:3px;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);
+  border:1px solid var(--line);border-radius:7px;padding:4px;
+  box-shadow:0 10px 30px rgba(0,0,0,.22);
+}
+.theme-switch .ts-label{font:700 10px 'Archivo';letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim);padding:0 8px 0 6px}
+.theme-switch button{
+  font:600 12px 'Archivo',sans-serif;padding:7px 12px;border:none;border-radius:4px;
+  background:transparent;color:var(--ink-dim);cursor:pointer;transition:background .2s,color .2s;
+}
+.theme-switch button:hover{color:var(--ink)}
+.theme-switch button.active{background:var(--accent);color:#161513}
+@media(max-width:960px){.theme-switch{bottom:78px;left:12px;padding:3px}.theme-switch .ts-label{display:none}.theme-switch button{padding:6px 10px}}
+
+/* ---------- reveal animaties ---------- */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+.reveal-d1{transition-delay:.12s}.reveal-d2{transition-delay:.24s}.reveal-d3{transition-delay:.36s}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .marquee-track{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo" aria-label="F&amp;S Schildersbedrijf home">
+      <img src="images/logo.png" alt="F&amp;S Schildersbedrijf logo" onerror="this.style.display='none'">
+      <span class="wordmark">F<span>&amp;</span>S<small>Schildersbedrijf</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#diensten">Diensten</a></li>
+      <li><a href="#voor-na">Voor &amp; na</a></li>
+      <li><a href="#over-ons">Over ons</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact" class="btn btn-nav">Gratis offerte</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigatiemenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Menu sluiten">✕</button>
+  <a href="#diensten">Diensten</a>
+  <a href="#voor-na">Voor &amp; na</a>
+  <a href="#over-ons">Over ons</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#blog">Blog</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact" class="btn">Gratis offerte</a>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow reveal">Schildersbedrijf · Maastricht e.o.</span>
+      <h1 class="reveal reveal-d1">Vakkundig schilderwerk, <span class="serif-i">binnen én buiten.</span></h1>
+      <p class="lead reveal reveal-d2">Van een strak geschilderd plafond tot een complete gevel of trap. F&amp;S Schildersbedrijf levert schilderwerk in Maastricht en omgeving waar u jaren plezier van heeft. Uw schilderwerk, onze passie.</p>
+      <div class="hero-cta reveal reveal-d3">
+        <a href="#contact" class="btn">Vraag een gratis offerte aan</a>
+        <a href="#voor-na" class="btn btn-ghost">Bekijk ons werk</a>
+      </div>
+      <div class="trust reveal reveal-d3">
+        <span class="stars">★★★★★</span>
+        <span><b>5,0 op Google</b> · 39 reviews · vast, betrouwbaar team</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Binnenschilderwerk</span><span>Buitenschilderwerk</span><span>Gevels</span><span>Trappen</span><span>Kozijnen</span><span>Plafonds</span><span>Spuitwerk</span><span>Houtrot herstel</span>
+    <span>Binnenschilderwerk</span><span>Buitenschilderwerk</span><span>Gevels</span><span>Trappen</span><span>Kozijnen</span><span>Plafonds</span><span>Spuitwerk</span><span>Houtrot herstel</span>
+  </div>
+</div>
+
+<!-- DIENSTEN -->
+<section id="diensten">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Diensten</span>
+      <h2>Al uw schilderwerk, <span class="serif-i">door één team</span></h2>
+      <p>Binnen of buiten, groot of klein. Wij bereiden voor, schilderen strak af en leveren netjes op. Geen half werk, geen verrassingen.</p>
+    </div>
+    <div class="grid-4">
+      <div class="card reveal">
+        <span class="num">01</span>
+        <h3>Binnenschilderwerk</h3>
+        <p>Muren, plafonds, deuren en kozijnen. Strak afgewerkt en netjes afgeplakt, zodat uw interieur er weer als nieuw uitziet.</p>
+      </div>
+      <div class="card reveal reveal-d1">
+        <span class="num">02</span>
+        <h3>Buitenschilderwerk</h3>
+        <p>Gevels, kozijnen, deuren en dakgoten. Duurzame verf die weer en wind aankan en uw woning jarenlang beschermt.</p>
+      </div>
+      <div class="card reveal reveal-d2">
+        <span class="num">03</span>
+        <h3>Trappen &amp; trappenhuizen</h3>
+        <p>Van gedateerde trap naar strakke eyecatcher. Grondig geschuurd, voorbehandeld en in de kleur van uw keuze afgelakt.</p>
+      </div>
+      <div class="card reveal reveal-d3">
+        <span class="num">04</span>
+        <h3>Spuitwerk &amp; renovatie</h3>
+        <p>Spuitwerk voor een naadloos resultaat, plus houtrotherstel en voorbereidend werk. Zo houdt de verf het langer vol.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAAROM WIJ -->
+<section id="waarom-wij" class="why-band">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Waarom F&amp;S</span>
+      <h2>Waarom klanten voor <span class="serif-i">ons</span> kiezen</h2>
+      <p>Mooie beloftes maakt iedereen. Dit is wat wij kunnen bewijzen.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal">
+        <div class="stat">5,0<small>★</small></div>
+        <h3>39 reviews op Google</h3>
+        <p>Niet door onszelf geschreven, maar door klanten bij wie we het werk hebben opgeleverd.</p>
+      </div>
+      <div class="why reveal reveal-d1">
+        <div class="stat">100<small>%</small></div>
+        <h3>Vaste prijs vooraf</h3>
+        <p>De offerte is de prijs. Geen meerwerk-verrassingen achteraf, dat spreken we vooraf duidelijk af.</p>
+      </div>
+      <div class="why reveal reveal-d2">
+        <div class="stat">2</div>
+        <h3>Vaste vakmensen</h3>
+        <p>Een klein, vast team. Dezelfde bekende gezichten bij u thuis, van begin tot oplevering.</p>
+      </div>
+      <div class="why reveal reveal-d3">
+        <div class="stat">5<small>+ jr</small></div>
+        <h3>Ervaring in de regio</h3>
+        <p>Actief in heel Maastricht en Zuid-Limburg. Binnen- én buitenwerk, in elk seizoen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WERKWIJZE -->
+<section id="werkwijze">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Werkwijze</span>
+      <h2>Van offerte tot oplevering, <span class="serif-i">in drie stappen</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="big">1.</div>
+        <h3>Gratis opname</h3>
+        <p>We komen langs, bekijken het werk en luisteren naar uw wensen. Vrijblijvend en zonder kosten.</p>
+      </div>
+      <div class="step reveal reveal-d1">
+        <div class="big">2.</div>
+        <h3>Heldere offerte</h3>
+        <p>U ontvangt een duidelijke offerte met vaste prijs. Geen kleine lettertjes, geen verrassingen.</p>
+      </div>
+      <div class="step reveal reveal-d2">
+        <div class="big">3.</div>
+        <h3>Schilderen &amp; opleveren</h3>
+        <p>Ons team gaat aan de slag, werkt netjes en ruimt op. We leveren pas op als u tevreden bent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOOR & NA -->
+<section id="voor-na" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Voor &amp; na</span>
+      <h2>Zie het verschil <span class="serif-i">zelf</span></h2>
+      <p>Sleep over de foto's en ontdek wat een goede voorbereiding en de juiste verf doen. Echt werk van F&amp;S.</p>
+    </div>
+    <div class="ba-pair">
+      <div class="ba-card reveal">
+        <div class="ba" style="--img-voor:url('images/gevel-voor.webp');--img-na:url('images/gevel-na.webp')">
+          <div class="ba-layer ba-after"></div>
+          <div class="ba-layer ba-before"></div>
+          <span class="ba-label voor">Voor</span>
+          <span class="ba-label na">Na</span>
+          <div class="ba-handle"><span class="ba-knob" aria-hidden="true">⇆</span></div>
+          <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Vergelijk voor en na van de gevel" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:5;margin:0">
+        </div>
+        <div class="body">
+          <span class="tag">Buitenschilderwerk</span>
+          <h3>Vergrijsde gevel → fris geschilderd</h3>
+          <p>Gevel gereinigd, hersteld en opnieuw geschilderd met een strakke donkere plint. Klaar voor jaren weer en wind.</p>
+        </div>
+      </div>
+      <div class="ba-card reveal reveal-d1">
+        <div class="ba" style="--img-voor:url('images/trap-hout-voor.jpg');--img-na:url('images/trap-hout-na.jpg')">
+          <div class="ba-layer ba-after"></div>
+          <div class="ba-layer ba-before"></div>
+          <div class="ba-handle"><span class="ba-knob" aria-hidden="true">⇆</span></div>
+          <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Vergelijk voor en na van de houten trap" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:5;margin:0">
+        </div>
+        <div class="body">
+          <span class="tag">Trap &amp; trappenhuis</span>
+          <h3>Oude trap → strak in het hout</h3>
+          <p>Treden en stootborden vakkundig behandeld en afgelakt. Van gedateerd naar een warme, strakke blikvanger.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTEN -->
+<section id="projecten" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Recent werk</span>
+      <h2>Een greep uit <span class="serif-i">onze projecten</span></h2>
+    </div>
+    <div class="projects">
+      <a href="in-ontwikkeling.html" class="project p1 reveal">
+        <div class="project-info">
+          <span class="tag">Binnenschilderwerk · Maastricht</span>
+          <h3>Kleurrijk plafond &amp; strakke deuren</h3>
+        </div>
+      </a>
+      <a href="in-ontwikkeling.html" class="project p2 reveal reveal-d1">
+        <div class="project-info">
+          <span class="tag">Trap · Maastricht</span>
+          <h3>Van wit naar strak mat zwart</h3>
+        </div>
+      </a>
+      <a href="in-ontwikkeling.html" class="project p3 reveal reveal-d2">
+        <div class="project-info">
+          <span class="tag">Buitenschilderwerk</span>
+          <h3>Complete gevel opnieuw geschilderd</h3>
+        </div>
+      </a>
+    </div>
+    <p class="photo-note reveal">Meer projecten volgen op de projectpagina.</p>
+  </div>
+</section>
+
+<!-- OVER ONS -->
+<section id="over-ons">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo reveal" style="--img-bus-about:url('images/bus.webp')">
+        <span>F&amp;S Schildersbedrijf · Maastricht</span>
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow reveal">Wie zijn wij</span>
+        <h2 class="reveal reveal-d1">Twee vakmensen met <span class="serif-i">oog voor detail</span></h2>
+        <p class="reveal reveal-d2">F&amp;S Schildersbedrijf is een klein, betrokken schildersbedrijf uit Maastricht. Wij houden van strak, eerlijk werk, en dat zie je terug in elk project. Geen wisselende ploegen, maar hetzelfde vaste team dat het werk van begin tot eind verzorgt.</p>
+        <p class="reveal reveal-d2">Van een enkele deur tot een complete gevel: we denken met u mee over kleur, materiaal en aanpak. Heeft u een vraag over uw schilderwerk? Stel hem gerust, u krijgt altijd een eerlijk en duidelijk antwoord.</p>
+        <ul class="usp-list reveal reveal-d3">
+          <li><div><b>Vast, betrouwbaar team</b><span>Dezelfde bekende gezichten bij u thuis, netjes en op tijd.</span></div></li>
+          <li><div><b>Eén aanspreekpunt</b><span>Korte lijnen en snelle communicatie, van offerte tot oplevering.</span></div></li>
+          <li><div><b>Lokaal in Maastricht</b><span>Geworteld in Zuid-Limburg, altijd snel bij u in de buurt.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="reviews-band">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Reviews</span>
+      <h2>Wat klanten <span class="serif-i">zeggen</span></h2>
+      <p>Een 5,0 gemiddelde uit 39 Google-reviews. Dit is wat mensen over ons schrijven.</p>
+    </div>
+  </div>
+  <div class="review-viewport reveal">
+    <div class="review-track" id="reviewTrack">
+      <!-- set 1 -->
+      <div class="review"><span class="stars">★★★★★</span><p class="quote">"Mooi strak schilderwerk, fijne communicatie van 2 aardige jonge mannen, een absolute aanbeveling!"</p><div class="who"><b>Ingrid</b>Maastricht · Binnenschilderwerk</div></div>
+      <div class="review"><span class="stars">★★★★★</span><p class="quote">"Alles verliep heel vlot: gemakkelijke en snelle communicatie, zeer betrouwbaar en het resultaat ziet er fantastisch uit. Ook de prijs was zeer netjes."</p><div class="who"><b>Jen LGC</b>Maastricht · Schilderwerk</div></div>
+      <div class="review"><span class="stars">★★★★★</span><p class="quote">"Onze trap is van wit naar zwart gegaan en het is echt prachtig geworden. Super strak afgewerkt."</p><div class="who"><b>Familie Coenen</b>Maastricht · Trap</div></div>
+      <div class="review"><span class="stars">★★★★★</span><p class="quote">"Gevel liet echt te wensen over, nu ziet het huis er weer als nieuw uit. Keurig afgeplakt en netjes opgeruimd."</p><div class="who"><b>Rob H.</b>Heer · Buitenschilderwerk</div></div>
+      <div class="review"><span class="stars">★★★★★</span><p class="quote">"Snelle offerte, afspraak nagekomen en de prijs klopte precies. Fijne jongens om mee te werken."</p><div class="who"><b>Miriam D.</b>Amby · Binnenschilderwerk</div></div>
+      <div class="review"><span class="stars">★★★★★</span><p class="quote">"Plafonds en muren strak in de verf. Je ziet dat ze het met passie doen en echt trots zijn op hun werk."</p><div class="who"><b>Peter S.</b>Wolder · Plafonds</div></div>
+      <div class="review"><span class="stars">★★★★★</span><p class="quote">"Vakwerk. Ze denken mee over kleur en materiaal en het resultaat is beter dan verwacht. Aanrader!"</p><div class="who"><b>Sanne V.</b>Sint Pieter · Renovatie</div></div>
+      <div class="review"><span class="stars">★★★★★</span><p class="quote">"Kozijnen en deuren buiten laten schilderen. Netjes op tijd, goede kwaliteit verf en een eerlijke prijs."</p><div class="who"><b>Familie Janssen</b>Meerssen · Buitenschilderwerk</div></div>
+      <div class="review"><span class="stars">★★★★★</span><p class="quote">"Betrouwbaar en communicatief. Ze houden je op de hoogte en laten alles schoon achter. Zeker een 10."</p><div class="who"><b>Karin B.</b>Valkenburg · Binnenschilderwerk</div></div>
+      <div class="review"><span class="stars">★★★★★</span><p class="quote">"Van A tot Z goed geregeld. Prettige communicatie en het schilderwerk is echt netjes afgewerkt."</p><div class="who"><b>Tom L.</b>Eijsden · Trappenhuis</div></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="rev-foot reveal">
+      <span class="g-badge"><span class="stars">★★★★★</span> 5,0 / 5 · 39 reviews</span>
+      <span>Beoordelingen via Google.</span>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Blog &amp; kennis</span>
+      <h2>Tips van de <span class="serif-i">schilder</span></h2>
+      <p>Handige weetjes over verf, voorbereiding en onderhoud, zodat uw schilderwerk langer mooi blijft.</p>
+    </div>
+    <div class="blog-grid">
+      <a href="in-ontwikkeling.html" class="post b1 reveal">
+        <div class="thumb"><span class="thumb-note">Foto nog toe te voegen</span></div>
+        <div class="body">
+          <span class="cat">Binnen</span>
+          <h3>Welke verf kies je voor een vochtige badkamer?</h3>
+          <p>Schimmel en condens vragen om de juiste verf. Zo maak je de goede keuze.</p>
+          <div class="more">Lees meer →</div>
+        </div>
+      </a>
+      <a href="in-ontwikkeling.html" class="post b2 reveal reveal-d1">
+        <div class="thumb"><span class="thumb-note">Foto nog toe te voegen</span></div>
+        <div class="body">
+          <span class="cat">Seizoen</span>
+          <h3>Buiten schilderen in de winter: kan dat?</h3>
+          <p>Temperatuur en vocht bepalen het resultaat. Wanneer wachten en wanneer doorpakken?</p>
+          <div class="more">Lees meer →</div>
+        </div>
+      </a>
+      <a href="in-ontwikkeling.html" class="post b3 reveal reveal-d2">
+        <div class="thumb"><span class="thumb-note">Foto nog toe te voegen</span></div>
+        <div class="body">
+          <span class="cat">Voorbereiding</span>
+          <h3>Zo bereid je houtwerk goed voor op de kwast</h3>
+          <p>Goede voorbereiding is het halve werk. Schuren, plamuren en gronden in de juiste volgorde.</p>
+          <div class="more">Lees meer →</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="why-band">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Veelgestelde vragen</span>
+      <h2>Goed om te <span class="serif-i">weten</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Wat kost schilderwerk?</button>
+        <div class="faq-a"><p>Dat hangt af van het oppervlak en de staat van het werk. Binnen rekenen we vaak per m² of per vertrek, buiten per project. Na een gratis opname ontvangt u een vaste prijs, zodat u vooraf precies weet waar u aan toe bent.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Hoe snel kunnen jullie beginnen?</button>
+        <div class="faq-a"><p>Meestal binnen één tot twee weken. Een gemiddeld vertrek is in één tot twee dagen klaar. Een gevel of trappenhuis plannen we netjes in overleg, zodat u er zo min mogelijk hinder van heeft.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">In welke omgeving werken jullie?</button>
+        <div class="faq-a"><p>In heel Maastricht en Zuid-Limburg: Heer, Amby, Wolder, Sint Pieter, Meerssen, Valkenburg, Eijsden, Gronsveld en omstreken. Twijfelt u of uw plaats erbij hoort? Bel of app gerust even.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Is de offerte gratis?</button>
+        <div class="faq-a"><p>Ja, altijd. We komen vrijblijvend langs, bekijken het werk en u ontvangt een heldere offerte. Pas na uw akkoord gaan we aan de slag. Tot die tijd kost het u niets.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="cta-final">
+  <div class="wrap">
+    <span class="eyebrow reveal">Vrijblijvend aanvragen</span>
+    <h2 class="reveal reveal-d1">Klaar voor <span class="serif-i">strak schilderwerk?</span></h2>
+    <p class="reveal reveal-d2">Vraag een gratis offerte aan. We komen langs, denken met u mee en u ontvangt een heldere prijs zonder verrassingen.</p>
+    <div class="reveal reveal-d3">
+      <a href="tel:+31627152496" class="btn">Bel of app 06 27 15 24 96</a>
+    </div>
+    <p class="cta-sub reveal reveal-d3">Of mail naar <a href="mailto:fs.schildersbedrijf@gmail.com" style="color:var(--accent-deep)">fs.schildersbedrijf@gmail.com</a> · reactie binnen 24 uur</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <img src="images/logo.png" alt="F&amp;S Schildersbedrijf logo" onerror="this.style.display='none'">
+          <span class="wordmark" style="font-family:'Archivo';font-weight:800;font-size:20px;color:var(--ink)">F<span style="color:var(--accent-deep)">&amp;</span>S</span>
+        </div>
+        <p>Schildersbedrijf voor Maastricht en Zuid-Limburg. Binnen- en buitenschilderwerk met oog voor detail. Uw schilderwerk, onze passie.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/FSMaastricht/" target="_blank" rel="noopener" aria-label="F&amp;S op Facebook">
+            <svg viewBox="0 0 24 24" role="img"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+          </a>
+          <a href="mailto:fs.schildersbedrijf@gmail.com" aria-label="Stuur een e-mail">
+            <svg viewBox="0 0 24 24" role="img"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Diensten</h4>
+        <ul>
+          <li><a href="in-ontwikkeling.html">Binnenschilderwerk</a></li>
+          <li><a href="in-ontwikkeling.html">Buitenschilderwerk</a></li>
+          <li><a href="in-ontwikkeling.html">Trappen &amp; trappenhuizen</a></li>
+          <li><a href="in-ontwikkeling.html">Spuitwerk</a></li>
+          <li><a href="in-ontwikkeling.html">Houtrotherstel</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Werkgebied</h4>
+        <ul>
+          <li><a href="in-ontwikkeling.html">Schilder Maastricht</a></li>
+          <li><a href="in-ontwikkeling.html">Schilder Heer</a></li>
+          <li><a href="in-ontwikkeling.html">Schilder Amby</a></li>
+          <li><a href="in-ontwikkeling.html">Schilder Meerssen</a></li>
+          <li><a href="in-ontwikkeling.html">Schilder Valkenburg</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Vademruwe 13, 6218 SV Maastricht</li>
+          <li><a href="tel:+31627152496">06 27 15 24 96</a></li>
+          <li><a href="mailto:fs.schildersbedrijf@gmail.com">fs.schildersbedrijf@gmail.com</a></li>
+          <li>Ma–Vr 08:30–17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 F&amp;S Schildersbedrijf · Maastricht · KVK op aanvraag</span>
+      <span>Website door <a href="https://s5onlinemarketing.com">S5Online Marketing</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- THEMA-SWITCH (demo) -->
+<div class="theme-switch" id="themeSwitch" role="group" aria-label="Thema kiezen">
+  <span class="ts-label">Thema</span>
+  <button type="button" data-mode-btn="auto" class="active">Auto</button>
+  <button type="button" data-mode-btn="dark">Donker</button>
+  <button type="button" data-mode-btn="light">Licht</button>
+</div>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <a href="#contact" class="btn">Vraag een gratis offerte aan</a>
+</div>
+
+<script>
+// nav scroll state
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', scrollY > 40);
+}, {passive:true});
+
+// thema: auto (donker -> licht tijdens scrollen), donker of licht
+const htmlEl = document.documentElement;
+const themeSwitch = document.getElementById('themeSwitch');
+let themeMode = 'auto';
+const applyMode = () => {
+  if (themeMode === 'dark') htmlEl.setAttribute('data-mode', 'dark');
+  else if (themeMode === 'light') htmlEl.setAttribute('data-mode', 'light');
+  else htmlEl.setAttribute('data-mode', scrollY > innerHeight * 0.62 ? 'light' : 'dark');
+};
+themeSwitch.querySelectorAll('[data-mode-btn]').forEach(b => {
+  b.addEventListener('click', () => {
+    themeMode = b.dataset.modeBtn;
+    themeSwitch.querySelectorAll('button').forEach(x => x.classList.toggle('active', x === b));
+    applyMode();
+  });
+});
+addEventListener('scroll', () => { if (themeMode === 'auto') applyMode(); }, {passive:true});
+applyMode();
+
+// mobile menu
+const menu = document.getElementById('mobileMenu');
+const burger = document.getElementById('hamburger');
+const closeBtn = document.getElementById('mobileClose');
+let menuOpen = false;
+const toggleMenu = open => {
+  menu.classList.toggle('open', open);
+  burger.setAttribute('aria-expanded', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+  menuOpen = open;
+  if (typeof updateSticky === 'function') updateSticky();
+};
+burger.addEventListener('click', () => toggleMenu(true));
+closeBtn.addEventListener('click', () => toggleMenu(false));
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
+
+// before/after sliders
+document.querySelectorAll('.ba').forEach(ba => {
+  const before = ba.querySelector('.ba-before');
+  const handle = ba.querySelector('.ba-handle');
+  const range = ba.querySelector('.ba-range');
+  const set = v => {
+    v = Math.max(0, Math.min(100, v));
+    ba.style.setProperty('--pos', v + '%');
+    if (before) before.style.clipPath = 'inset(0 ' + (100 - v) + '% 0 0)';
+    if (handle) handle.style.left = v + '%';
+  };
+  set(50);
+  if (range) range.addEventListener('input', () => set(+range.value));
+});
+
+// faq accordion
+document.querySelectorAll('.faq-item').forEach(item => {
+  const q = item.querySelector('.faq-q');
+  const a = item.querySelector('.faq-a');
+  q.addEventListener('click', () => {
+    const open = item.classList.toggle('open');
+    q.setAttribute('aria-expanded', open);
+    a.style.maxHeight = open ? a.scrollHeight + 'px' : '0';
+  });
+});
+
+// sticky mobile cta
+const stickyCta = document.getElementById('stickyCta');
+const heroEl = document.querySelector('.hero');
+const ctaSection = document.getElementById('contact');
+let pastHero = false, nearEnd = false;
+const updateSticky = () => {
+  const show = pastHero && !nearEnd && !menuOpen;
+  stickyCta.classList.toggle('show', show);
+  stickyCta.setAttribute('aria-hidden', !show);
+};
+new IntersectionObserver(([e]) => { pastHero = !e.isIntersecting; updateSticky(); }, {threshold:0}).observe(heroEl);
+new IntersectionObserver(([e]) => { nearEnd = e.isIntersecting; updateSticky(); }, {threshold:.1}).observe(ctaSection);
+
+// scroll reveals
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
